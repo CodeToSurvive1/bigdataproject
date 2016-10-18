@@ -17,11 +17,13 @@ import java.util.Set;
  */
 public class ReverseIndexReducer extends Reducer<Text, Text, Text, Text> {
 
-	private Map<String, Integer> map = new HashMap<String, Integer>();
 	private Text valueText = new Text();
 
 	@Override
 	protected void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
+
+		Map<String, Integer> map = new HashMap<String, Integer>();
+
 
 		for (Text value : values) {
 
