@@ -7,3 +7,9 @@
 
 ###CustomInputFormat 自定义输入格式(从mongodb数据库表中统计各个年龄的数量,并存储到hdfs文件系统中)
 
+###SecondSort.before 一次排序
+
+###SecondSort.after 二次排序
+
+
+
